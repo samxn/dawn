@@ -117,6 +117,9 @@
         "collapsible-row-3",
         "share"
       ],
+      "custom_css": [
+        ".product__title + .product__text {font-size: 50px; background: tomato;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
