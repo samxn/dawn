@@ -57,15 +57,6 @@ if (!customElements.get('product-info')) {
         this.postProcessHtmlCallbacks.push((newNode) => {
           window?.Shopify?.PaymentButton?.init();
           window?.ProductModel?.loadShopifyXR();
-          publish(PUB_SUB_EVENTS.sectionRefreshed, {
-            data: {
-              sectionId: this.sectionId,
-              resource: {
-                type: SECTION_REFRESH_RESOURCE_TYPE.product,
-                id: newNode.dataset.productId,
-              },
-            },
-          });
         });
       }
 
@@ -101,7 +92,8 @@ if (!customElements.get('product-info')) {
           this.productModal?.remove();
 
           // Grab the selected variant from the new product info
-          const variant = this.getSelectedVariant(html.querySelector(`product-info[data-section=${this.sectionId}]`));
+          debugger;
+          const variant = this.getSelectedVariant(html.querySelector(`product-info`));
           this.updateURL(productUrl, variant?.id);
 
           // If we are in an embedded context (quick add, featured product, etc), only swap product info.
