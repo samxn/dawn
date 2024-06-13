@@ -3,17 +3,11 @@
     "featured_product_iDcL8C": {
       "type": "featured-product",
       "blocks": {
-        "text_pghgGf": {
+        "text_VBm96A": {
           "type": "text",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_9wV6Cb": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
+            "text": "This is a featured product displayed above the main product",
+            "text_style": "body"
           }
         },
         "price_GgnMQz": {
@@ -28,18 +22,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector_QTFcW7": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons_WMf9rq": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
         "share_gFQjBw": {
           "type": "share",
           "settings": {
@@ -48,22 +30,22 @@
         }
       },
       "block_order": [
-        "text_pghgGf",
-        "title_9wV6Cb",
+        "text_VBm96A",
         "price_GgnMQz",
         "variant_picker_mDFHPD",
-        "quantity_selector_QTFcW7",
-        "buy_buttons_WMf9rq",
         "share_gFQjBw"
+      ],
+      "custom_css": [
+        ".product__text {font-size: 50px; background-color: tomato;}"
       ],
       "settings": {
         "product": "{{ product }}",
         "color_scheme": "",
         "secondary_background": false,
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "media_position": "left",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,
