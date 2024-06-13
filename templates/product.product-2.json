@@ -22,6 +22,13 @@
             "swatch_shape": "circle"
           }
         },
+        "buy_buttons_jVNNXx": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
         "share_gFQjBw": {
           "type": "share",
           "settings": {
@@ -33,6 +40,7 @@
         "text_VBm96A",
         "price_GgnMQz",
         "variant_picker_mDFHPD",
+        "buy_buttons_jVNNXx",
         "share_gFQjBw"
       ],
       "custom_css": [
@@ -171,7 +179,7 @@
         "share"
       ],
       "custom_css": [
-        ".product__title + .product__text {background: tomato; font-size: 50px}"
+        ".product__title + .product__text {background: tomato; font-size: 50px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
