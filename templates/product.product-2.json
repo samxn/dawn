@@ -68,6 +68,13 @@
           "settings": {
           }
         },
+        "text_RgyaUG": {
+          "type": "text",
+          "settings": {
+            "text": "This is the main product",
+            "text_style": "body"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -150,6 +157,7 @@
       "block_order": [
         "vendor",
         "title",
+        "text_RgyaUG",
         "caption",
         "price",
         "variant_picker",
@@ -161,6 +169,9 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share"
+      ],
+      "custom_css": [
+        ".product__title + .product__text {background: tomato; font-size: 50px}"
       ],
       "settings": {
         "enable_sticky_info": true,
